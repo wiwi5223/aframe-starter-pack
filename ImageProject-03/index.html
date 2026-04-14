@@ -5,11 +5,20 @@
   </head>
   <body>
     <a-scene>
+      <a-assets>
+        <a-assets-item id="Camo" src="assets/Camo mode.obj"></a-assets-item>
+        <a-assets-item2 id="Polaroid" src="assets/Polaroid time capsule.obj"></a-assets-item2>
+          <img id="sky" src="assets/IMG_20260317_072639_00_008.jpg">  
+          <img id="Camoskin" src="assets/Camo mode.png">
+          <img id="Polaroidskin" src="assets/Polaroid time capsule.png">
+      </a-assets>
+      <a-obj-model src="#Camo" position="21.166 28.477 -39.629" scale="5 5 5" rotation="-26.360 -202.51 -17.680" material="shader:flat;src:#Camoskin"></a-obj-model>
+      <a-obj-model src="#Polaroid" position="-24.366 6.893 -13.997" scale="2 2 2" rotation="-8.170 -127.29 1.480" material="shader:flat;src:#Polaroidskin"></a-obj-model>
       <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
       <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
       <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
       <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
+      <a-sky src="#sky"></a-sky>
     </a-scene>
   </body>
 </html>
